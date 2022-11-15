@@ -106,3 +106,17 @@ p{
         "B Y";
     }
 }
+@media(min-width:992px){
+    #header .medium, #header .mobil{
+        display: none;
+    }
+    #header .big{
+        display: block;
+    }
+    .content{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "R W B Y"
+        "p1 p2 p3 p4";
+    }
+}
