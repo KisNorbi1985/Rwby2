@@ -102,7 +102,7 @@ p{
         grid-template-areas: 
         "R W"
         "p1 p2"
-        "B Y"
-        "p3 p4";
+        "p3 p4"
+        "B Y";
     }
 }
