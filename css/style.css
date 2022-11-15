@@ -53,4 +53,56 @@ p{
     line-height: 1.5;
     padding: 10px 5px;
 }
-@media(min-width:768px)
+@media(min-width:768px){
+    #header .big, #header .mobil{
+        display: none;
+    }
+    #header .medium{
+        display: block;
+    }
+    #navbar ul li{
+        float: left;
+        width:24.9999%;
+        padding: 25px 0;
+    }
+    #navbar::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .R{
+        grid-area: R;
+    }
+    .W{
+        grid-area: W;
+    }
+    .B{
+        grid-area: B;
+    }
+    .Y{
+        grid-area: Y;
+    }
+    .p1{
+        grid-area: p1;
+    }
+    .p2{
+        grid-area: p2;
+    }
+    .p3{
+        grid-area: p3;
+    }
+    .p4{
+        grid-area: p4;
+    }
+    .content{
+        max-width: 1600px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "R W"
+        "p1 p2"
+        "B Y"
+        "p3 p4";
+    }
+}
